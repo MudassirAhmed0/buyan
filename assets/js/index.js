@@ -1,10 +1,16 @@
 const header = document.querySelector('header') 
 const academiesDd = document.querySelector('.header-dropdown-btn-academies')
 const servicesDd =document.querySelector('.header-dropdown-btn-services')
+const video =document.querySelector('video')
+
+
+
+
 academiesDd.addEventListener('mouseenter',()=>  header.classList.add('active'))
 academiesDd.addEventListener('mouseleave',()=>  header.classList.contains('fixed') || header.classList.remove('active'))
 servicesDd.addEventListener('mouseenter',()=> header.classList.add('active'))
 servicesDd.addEventListener('mouseleave',()=>header.classList.contains('fixed') || header.classList.remove('active'))
+
 
 window.onscroll = function(e) {
     // print "false" if direction is down and "true" if up
@@ -24,3 +30,13 @@ window.onscroll = function(e) {
     }
     this.oldScroll = this.scrollY;
   }
+
+  setTimeout(()=>{
+       
+      console.log(video)
+    function playVid() {
+        video.play();
+    }
+    playVid()
+    
+  },50)
