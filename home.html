@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon/bunyan-logo.png">
+    <title>Bunyan</title>
+    <link rel="stylesheet" href="./assets/styles/home.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="absolute top-0 left-0 w-full container z-10 text-white">
+        <div class="flex justify-end ptb-10px hidewhenfixed">
+            <ul class="flex col-gap-1 align-center ">
+                <li class="border-right-white-1 pr-1 ls-1-1 text-light" >
+                    <a href="#">Career</a>
+                </li>
+                <li class="border-right-white-1 pr-1 ls-1-1 text-light">
+                    <a href="#">عربى</a>
+                </li>
+                <li class="img_container cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14.577" height="14.581" viewBox="0 0 14.577 14.581"><path d="M13.955,14.581a.623.623,0,0,1-.452-.194L9.475,10.322a5.811,5.811,0,1,1,2.148-4.514,5.835,5.835,0,0,1-1.272,3.626l4.055,4.092a.628.628,0,0,1-.023.884A.612.612,0,0,1,13.955,14.581ZM5.812,1.253A4.563,4.563,0,1,0,9.039,2.589,4.534,4.534,0,0,0,5.812,1.253Z" fill="#fff"/></svg>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-between align-center">
+            <div class="headerlogo img_container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120.805" height="62.765" viewBox="0 0 120.805 62.765"><g transform="translate(0 0)"><path d="M6.608,7.389V17.423h3.827V6.946C10.435,2.55,8.823,0,4.672,0A5.878,5.878,0,0,0,0,2.329l.2.507c4.217-1.609,6.409-.183,6.409,4.553Z" transform="translate(110.366 7.325)" fill="#fff"/><path d="M0,16.994V0H3.824v16.99Z" transform="translate(104.87 7.753)" fill="#fff"/><path d="M15.934,17.42H12.108V7.39a6.983,6.983,0,0,0-.887-3.9A2.987,2.987,0,0,0,8.592,2.205,8.362,8.362,0,0,0,5.7,2.84l-.2-.507A5.875,5.875,0,0,1,10.172,0,5.223,5.223,0,0,1,14.61,1.826a8.2,8.2,0,0,1,1.324,5.121V17.419Zm-12.108,0H0V.429H3.827V17.419Z" transform="translate(42.776 7.325)" fill="#fff"/><path d="M5.763,17.419a5.223,5.223,0,0,1-4.438-1.826A8.2,8.2,0,0,1,0,10.472V0H3.827V10.03a6.981,6.981,0,0,0,.887,3.9,2.987,2.987,0,0,0,2.628,1.282,8.362,8.362,0,0,0,2.895-.634l.2.508A5.877,5.877,0,0,1,5.763,17.419Zm10.172-.428H12.108V0h3.827V16.989Z" transform="translate(21.302 7.753)" fill="#fff"/><path d="M7.324,25.239c-1.984,0-4.5-1.09-5.387-2.333l.632-1.585A7.74,7.74,0,0,0,7.124,22.63c3.026,0,4.982-2.214,4.983-5.639V0h3.827V16.99a7.711,7.711,0,0,1-2.808,6.484A9.518,9.518,0,0,1,7.324,25.239ZM5.764,17.42a5.224,5.224,0,0,1-4.439-1.826A8.2,8.2,0,0,1,0,10.472V0H3.827V10.03a6.982,6.982,0,0,0,.887,3.9,2.987,2.987,0,0,0,2.628,1.283,8.361,8.361,0,0,0,2.894-.634l.2.507A5.875,5.875,0,0,1,5.764,17.42Z" transform="translate(63.988 7.753)" fill="#fff"/><path d="M0,13.362c0,1.894,1.575,4.488,5.17,4.488a5.878,5.878,0,0,0,4.676-2.334l-.2-.507c-4.164,2.019-5.816-.3-5.816-1.978,0-1.42.937-2.7,3.926-3.229l3.762-.665v8.284h3.827V5.917C15.346,2.029,11.815,0,7.823,0A7.985,7.985,0,0,0,.947,3.481l1.345,1.05a7.412,7.412,0,0,1,5.2-2.046c1.979,0,4.025.85,4.025,2.918V6.827L6.47,7.718C2.173,8.477,0,10.457,0,13.362Z" transform="translate(84.252 7.325)" fill="#fff"/><path d="M8.492,7.326A9.112,9.112,0,0,0,3.827,8.863V0H0V24.746H3.827V11.173A6.23,6.23,0,0,1,7.991,9.724c3.165,0,5.155,2.681,5.155,6.527,0,5.01-3.229,7.693-7.447,6.084l-.2.507a5.881,5.881,0,0,0,4.676,2.333c4.277,0,6.8-4.222,6.8-8.925,0-5.068-3.083-8.925-8.481-8.925Z" fill="#fff"/><path d="M99.089,29.774a2.281,2.281,0,1,1,2.281-2.281A2.283,2.283,0,0,1,99.089,29.774Zm-20.516,0a2.281,2.281,0,1,1,2.281-2.281A2.284,2.284,0,0,1,78.573,29.774Zm-6.083,0a2.281,2.281,0,1,1,2.282-2.281A2.283,2.283,0,0,1,72.49,29.774ZM11.4,27.834a9.368,9.368,0,0,1-6.8-2.551,8.3,8.3,0,0,1-2.4-5.942V13.819a3.851,3.851,0,0,0-.563-2.565,1.265,1.265,0,0,0-.933-.35,2.679,2.679,0,0,0-.632.085L0,10.778a4.263,4.263,0,0,1,2.368-.884A3.172,3.172,0,0,1,5.049,11.06a4.7,4.7,0,0,1,.793,2.892v5.486c0,3.507,2.18,5.774,5.555,5.774,3.356,0,5.524-2.266,5.524-5.774V7.818h3.636V19.341a8.319,8.319,0,0,1-2.38,5.942A9.32,9.32,0,0,1,11.4,27.834Zm83.539-5.811a6.748,6.748,0,0,1-3.455-.825,4.825,4.825,0,0,1-2.233-3.082l.188-.125a5.783,5.783,0,0,0,3.917,1.41c1.691,0,4.529-.631,4.529-4.857V7.818h3.637v7.436c0,2.468-.771,4.307-2.292,5.464A7.233,7.233,0,0,1,94.936,22.023Zm-12.082,0A6.75,6.75,0,0,1,79.4,21.2a4.822,4.822,0,0,1-2.232-3.082l.188-.125a5.78,5.78,0,0,0,3.917,1.41c1.692,0,4.53-.631,4.53-4.857V7.818h3.635v7.436c0,2.469-.771,4.307-2.292,5.464A7.232,7.232,0,0,1,82.855,22.023Zm-12.088,0H25.821V0h3.635V19.4H69.184c1.691,0,4.529-.631,4.529-4.857V7.818H77.35v7.436c0,2.468-.771,4.307-2.292,5.464A7.233,7.233,0,0,1,70.767,22.023ZM10.051,10.141a2.323,2.323,0,1,1,2.323-2.323A2.326,2.326,0,0,1,10.051,10.141ZM87.619,4.562A2.281,2.281,0,1,1,89.9,2.281,2.284,2.284,0,0,1,87.619,4.562Z" transform="translate(19.286 32.992)" fill="#fff"/></g></svg>
+            </div>
+            <ul class="flex col-gap-2 align-center ">
+                <li><a href="#" class="text-light ls-1-1">About</a></li>
+                <li><a href="#" class="text-light ls-1-1">Latest News</a></li>
+                <li><a href="#" class="text-light ls-1-1 header-dropdown-btn header-dropdown-btn-academies">Where We Opreate  <svg xmlns="http://www.w3.org/2000/svg" width="9.069" height="5.454" viewBox="0 0 9.069 5.454"><path d="M0,0,4.074,4.076,8.149,0" transform="translate(0.46 0.458)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.3"/></svg>
+                        <div class="header-dropdown container   absolute top-0 left-0 w-full justify-between flex align-end  z-10">
+                            <div class="col-3 card flex dir-col justify-center align-start">
+                                <div class="title mb-2 text-32 text-blue ">
+                                    A Title Related <br> To Academies
+                                </div>
+                                <span class="text-primary text-light text-underline text-uppercase">
+                                    See All the Academies
+                                </span>
+                            </div>
+                            <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                                <div class="absolute top-0 left-0 w-full h-full img_container">
+                                    <img src="./assets/images/home/services/training.webp" alt="">
+                                </div>
+                                <img  width="100px" src="./assets/images/home/logo.svg"  class="mb-2 relative" alt="">
+                                <span class="lead text-white text-center relative">
+                                    Qoot  <br>
+                                    Academy
+                                </span>
+                            </div> 
+                            <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                                <div class="absolute top-0 left-0 w-full h-full img_container">
+                                    <img  src="./assets/images/home/services/advisory_consultant.webp" alt="">
+                                </div>
+                                <img  width="100px" src="./assets/images/home/logo.svg"  class="mb-2 relative" alt="">
+                                <span class="lead text-white text-center relative">
+                                    Bunyan  <br>
+                                    Academy
+                                </span>
+                            </div> 
+                            <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                                <div class="absolute top-0 left-0 w-full h-full img_container">
+                                    <img  src="./assets/images/home/services/operation_management.webp" alt="">
+                                </div>
+                                <img  width="100px" src="./assets/images/home/logo.svg"  class="mb-2 relative" alt="">
+                                <span class="lead text-white text-center relative">
+                                    Alayniah  <br>
+                                    Academy
+                                </span>
+                            </div> 
+                        </div>
+                </a></li>
+                <li><a href="#" class="text-light ls-1-1 header-dropdown-btn header-dropdown-btn-services">Services  <svg xmlns="http://www.w3.org/2000/svg" width="9.069" height="5.454" viewBox="0 0 9.069 5.454"><path d="M0,0,4.074,4.076,8.149,0" transform="translate(0.46 0.458)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.3"/></svg>
+                    <div class="header-dropdown container   absolute top-0 left-0 w-full justify-between flex align-end  z-10">
+                        <div class="col-3 card flex dir-col justify-center align-start">
+                            <div class="title mb-2 text-32 text-blue ">
+                                A Title Related <br> To Services
+                            </div>
+                            <span class="text-primary text-light text-underline text-uppercase">
+                                See All the Services
+                            </span>
+                        </div>
+                        <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                            <div class="absolute top-0 left-0 w-full h-full img_container">
+                                <img src="./assets/images/home/services/training.webp" alt="">
+                            </div> 
+                            <span class="lead text-white text-center relative">
+                                Services   
+                            </span>
+                        </div> 
+                        <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                            <div class="absolute top-0 left-0 w-full h-full img_container">
+                                <img  src="./assets/images/home/services/advisory_consultant.webp" alt="">
+                            </div> 
+                            <span class="lead text-white text-center relative">
+                               Advisory &  <br>
+                                Consultancy
+                            </span>
+                        </div> 
+                        <div class="col-3 card   relative flex align-center  justify-end dir-col pb-2">
+                            <div class="absolute top-0 left-0 w-full h-full img_container">
+                                <img  src="./assets/images/home/services/operation_management.webp" alt="">
+                            </div> 
+                            <span class="lead text-white text-center relative">
+                                Operation  <br>
+                                Managemnet
+                            </span>
+                        </div> 
+                    </div>
+                </a>
+                   
+                </li>
+                <li><a href="#" class="btn btn-primary" data-text='Contact Us'> </a></li>
+        </div>
+
+    </header>
+    <div class="container min-h-100 align-end justify-start relative flex container-y">
+        <div class="video_container absolute top-0 left-0 w-full h-full">
+          
+            <video src="https://designinguru.com/video/bunyanintro.mp4"    autoplay></video>
+        </div>
+        <h1 class="text-white mb-1 relative">A Title Include A <span>Brand</span> <br>
+            Message</h1>
+    </div>
+    <div class="container container-y flex dir-col justify-center min-h-100 relative">
+        <div class="img_container absolute w-full h-full top-0 left-0 ">
+            <img src="./assets/images/home/bg/company_achievement-bg.webp" alt="">
+        </div>
+        <div class=" mb-2  flex dir-col align-center relative">
+            <h4 class="mb-1 title text-blue text-center">A Title Related to Company <br> Achievments</h4>
+            <p class="lead text-grey mb-2 col-6 text-center">Through our high quality and proven track record, we endeavor to assist
+                individuals and establishments to reach their maximum level of brilliance.
+            </p>
+            <a href="#" class="text-uppercase text-primary text-underline ls-1-1">
+                Learn More
+            </a>
+        </div>
+        <div class="flex col-12 justify-center mt-3 relative">
+            <div class="col-10 flex justify-between">
+                <div class="col-3 flex dir-col justify-center align-center border-right-grey-1">
+                    <span class="text-primary text-xl">6</span>
+                    <span class="text-light ls-1-1 text-light text-grey text-uppercase">Academies</span>
+                </div>
+                <div class="col-3 flex dir-col justify-center align-center border-right-grey-1">
+                    <span class="text-primary text-xl">4k+</span>
+                    <span class="text-light ls-1-1 text-light text-grey text-uppercase">Students</span>
+                </div>
+                <div class="col-3 flex dir-col justify-center align-center border-right-grey-1">
+                    <span class="text-primary text-xl">24</span>
+                    <span class="text-light ls-1-1 text-light text-grey text-uppercase">Programs</span>
+                </div>
+                <div class="col-3 flex dir-col justify-center align-center ">
+                    <span class="text-primary text-xl">5</span>
+                    <span class="text-light ls-1-1 text-light text-grey text-uppercase">Awarding</span>
+                </div>
+            </div>
+          
+        </div>
+
+
+
+    </div>
+    <div class="container bg-blue container-y min-h-100 flex dir-col pt-5  pb-5 justify-center Services">
+        <div class="flex dir-col  align-center">
+            <span class="text-primary text-uppercase text-light  lead ls-1-1">Our Services</span>
+            <h4 class="title text-white mb-2 text-center">A Title Related to Bunyan <br>
+                Services
+            </h4>
+        </div>
+        <div class="flex justify-between mb-3">
+            <div class="col-4 card align-center justify-end   relative flex dir-col row-gap-1 p-1 text-white">
+                <div class="img_container absolute top-0 left-0 w-full h-full">
+                    <img height="529px" src="./assets/images/home/services/training.webp" alt="Training" class="imgZoomHover">
+                </div>
+                <span class="text-32 relative">Training</span>
+                <span class="relative text-center ls-1-1 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem temporibus maiores!</span>
+                <a href="#" class="text-underline ls-1-1 text-uppercase text-light">Learn More</a>
+            </div>
+            <div class="col-4 card align-center justify-end   relative flex dir-col row-gap-1 p-1 text-white">
+                <div class="img_container absolute top-0 left-0 w-full h-full">
+                    <img height="529px" src="./assets/images/home/services/advisory_consultant.webp" alt="Advisory & Consultancy" class="imgZoomHover">
+                </div>
+                <span class="text-32 relative text-center">Advisory & Consultancy</span>
+                <span class="relative text-center ls-1-1 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem temporibus maiores!</span>
+                <a href="#" class="text-underline ls-1-1 text-uppercase text-light">Learn More</a>
+            </div>
+            <div class="col-4 card align-center justify-end   relative flex dir-col row-gap-1  p-1 text-white">
+                <div class="img_container absolute top-0 left-0 w-full h-full">
+                    <img src="./assets/images/home/services/operation_management.webp" alt="Operation Managemnet" class="imgZoomHover">
+                </div>
+                <span class="text-32 relative text-center">Operation Managemnet</span>
+                <span class="relative text-center ls-1-1 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem temporibus maiores!</span>
+                <a href="#" class="text-underline ls-1-1 text-uppercase text-light">Learn More</a>
+            </div>
+        </div>
+        <div class="flex justify-center pb-2">
+            <a href="#" class="text-uppercase text-white text-underline ls-1-1  primary-hover">See ALL The Services</a>
+        </div>
+    </div>
+    <div class=" min-h-100 flex dir-col justify-center pb-5">
+        <div class="flex dir-col  align-center col-7  mlr-auto  pt-5">
+            <span class="text-center text-uppercase text-primary text-light  lead ls-1-1">Our Partners</span>
+            <h4 class="title mb-1 text-blue mb-1 text-center">
+                A Title Related to Companies <br>
+                Partners
+            </h4>
+            <span class="lead  text-grey text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque rem a quis sequi ducimus
+                voluptatum suscipit, assumenda officia quisquam molestiae? Ut, quos repellendus.
+            </span>
+        </div>
+        <div class="Slider pt-5 pb-5">
+            <div class="owl-carousel owl-theme">
+    <div class="item"><img src="./assets/images/home/partner/partner1.png" alt="partner1"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner2.png" alt="partner2"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner3.png" alt="partner3"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner4.png" alt="partner4"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner5.png" alt="partner5"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner6.png" alt="partner6"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner7.png" alt="partner7"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner8.png" alt="partner8"></div> 
+    <div class="item"><img src="./assets/images/home/partner/partner2.png" alt="partner9"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner5.png" alt="partner10"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner4.png" alt="partner11"></div>
+    <div class="item"><img src="./assets/images/home/partner/partner7.png" alt="partner12"></div> 
+</div>
+        </div>
+
+    </div>
+    <div class="container container-y justify-end min-h-100 bg-blue flex dir-col text-white relative h-80">
+        <div class="absolute top-0 left-0 img_container w-full h-full">
+            <img src="./assets/images/home/become-partner/accreditation.jpeg" alt="">
+        </div>
+        <h4 class="title mb-1 relative">A Title Related to Accreditation</h4>
+        <span class="mb-3 col-5  lead relative">
+            Students of Bunyan benefit form our established partnership with hospitality
+            industry leaders and is accredited to various academic bodies; including
+            Ecole hoteliere de Lausanne for our tourism, hospitality and entertainment
+            programs and our executive programs.
+
+        </span>
+        <a href="#" class="btn btn-primary mb-3" data-text='Become a Partner'> </a>
+    </div>
+    <div class="container  min-h-100 flex dir-col justify-center NEWS pt-5 pb-5">
+        <div class="flex dir-col align-center">
+            <span class="text-uppercase text-primary text-light ls-1-1 lead">Our News</span>
+            <h4 class="title text-blue mb-3">A Title Related to Company News</h4 class="title text-blue">
+            <div class="flex justify-between mb-3 col-12  ">
+                <div class="col-4 card align-start p-1 relative flex dir-col row-gap-1 p-1 text-white justify-end bg-blue">
+                    <div class="img_container absolute top-0 left-0 w-full h-full">
+                        <img src="./assets/images/home/news/qoot.webp" alt="Qoot" class="imgZoomHover">
+                    </div>
+                    <span class=" text-primary relative">5 April, 2019</span>
+                    <span class=" mb-1 relative text-20 ls-1-1">Establish Qoot academy in <br> riyadh.</span>
+                    <a href="#" class="text-light text-underline ls-1-1 text-uppercase text-white">Learn More</a>
+                </div>
+                <div class="col-4 card align-start p-1 relative flex dir-col row-gap-1 p-1 text-white justify-end">
+                    <div class="img_container absolute top-0 left-0 w-full h-full">
+                        <img src="./assets/images/home/news/hospitality.webp" alt="Hospitality" class="imgZoomHover">
+                    </div>
+                    <span class=" text-primary relative">5 April, 2019</span>
+                    <span class=" mb-1 relative text-20 ls-1-1">Localization solution in the 
+                        hospitality & tourism sector.</span>
+                    <a href="#" class="text-light text-underline ls-1-1 text-uppercase text-white">Learn More</a>
+                </div>
+                <div class="col-4 card align-start p-1 relative flex dir-col row-gap-1 p-1 text-white justify-end">
+                    <div class="img_container absolute top-0 left-0 w-full h-full">
+                        <img src="./assets/images/home/news/tourism.webp" alt="Tourism" class="imgZoomHover">
+                    </div>
+                    <span class=" text-primary relative">5 April, 2019</span>
+                    <span class=" mb-1 relative text-20 ls-1-1">Localization solution in the 
+                        hospitality & tourism sector.</span>
+                    <a href="#" class="text-light text-underline ls-1-1 text-uppercase text-white">Learn More</a>
+                </div>
+            </div>
+            <div class="flex justify-center pb-2">
+                <a href="#" class="text-uppercase text-primary text-underline ls-1-1 blue-hover ">See ALL The News</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container container-y bg-blue text-white">
+        <div class="flex justify-between align-center">
+            <div class="flex dir-col">
+                <span class="text-uppercase ls-1-1 lead mb-1-2  ptb-10px text-light">Sign-up to receive our latest news</span>
+                <span class="ls-1-1  text-light pb-10px">Subscribe to our newsletter & get notification about our news</span>
+            </div>
+            <div class="col-4">
+                <div class="inputWrapper col-12">
+                    <input type="text" placeholder="Enter your email ">
+                        <img src="./assets/images/home/icons/rightArrow.svg" alt="">
+                </div>
+                <ul class="flex col-gap-1 pb-10px pt-1 ">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/home/icons/youtube.svg" alt="Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/home/icons/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/home/icons/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/home/icons/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/home/icons/twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <footer class="container pt-2 lead text-grey ">
+        <div class="flex justify-between  pb-2 border-bottom-grey-1">
+            <ul class="col-2">
+                <li class="text-uppercase text-blue text-20"><a href="#">Academies</a></li>
+                <li><a href="#">Qoot Academy</a></li>
+                <li><a href="#">The Read Sea</a></li>
+                <li><a href="#">KAEC</a></li>
+            </ul>
+            <ul class="col-2">
+                <li></li>
+                <li><a href="#">Alayneh</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="col-2">
+                <li class="text-uppercase text-blue text-20"><a href="#">Newest Program</a></li>
+                <li><a href="#">Room Managemnet</a></li>
+                <li><a href="#">Hotel Managemnet</a></li>
+                <li><a href="#">Food & Beverage</a></li>
+            </ul>
+            <ul class="col-2">
+                <li class="text-uppercase text-blue text-20"><a href="#">News & Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <ul class="col-2">
+                <li class="text-uppercase text-blue text-20"><a href="#">About Us</a></li>
+                <li class="text-uppercase text-blue text-20"><a href="#">Contact Us</a></li>
+                <li class="text-uppercase text-blue text-20"><a href="#">Careers</a></li>
+                <li class="text-uppercase text-blue text-20"><a href="#">Partnership</a></li>
+
+            </ul>
+        </div>
+        <div class="flex pt-1 pb-1 align-center justify-between">
+                <span> 2021 &copy; Copyrights Bunyan</span>
+                <span> Developed By : <span class="text-primary text-underline ls-1-1">Brackets Technology</span></span>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script> 
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10, 
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
