@@ -1,0 +1,120 @@
+.brandCards .brandCard {
+  height: 300px;
+}
+
+.brandCards .brandCard .imgCircleBorder {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+  width: 147px;
+  height: 147px;
+  top: -84.5px;
+  border: 1.5px solid var(--unnamed-color-ab9969);
+  -webkit-box-shadow: 0px 0px 20px #6D8DAD29;
+          box-shadow: 0px 0px 20px #6D8DAD29;
+  border: 2px solid #AB9969;
+}
+
+.brandCards .brandCard .img_container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+  width: 133px;
+  height: 133px;
+  top: -77.5px;
+}
+
+.valueCards {
+  height: 190px;
+}
+
+.teamMembers .img_container {
+  background: var(--unnamed-color-ab9969) 0% 0% no-repeat padding-box;
+  background: #AB9969 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 228px;
+  width: 228px;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+}
+
+.teamMembers .img_container1 {
+  background: var(--unnamed-color-ab9969) 0% 0% no-repeat padding-box;
+  background: #AB9969 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 238px;
+  width: 238px;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.Where-We-Operate .card {
+  height: 660px;
+}
+
+.Where-We-Operate .card .textShowOnHover {
+  position: absolute;
+  bottom: 85px;
+  display: none;
+}
+
+.Where-We-Operate .card:hover .textShowOnHover {
+  display: block;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+.Where-We-Operate .card:hover .circleImageCard {
+  top: -145px;
+}
+
+.Where-We-Operate .card .circleImageCard {
+  width: 211px;
+  height: 211px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 6px 16px #00000033;
+          box-shadow: 0px 6px 16px #00000033;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0;
+}
+
+.Where-We-Operate .card .circleImageCard img {
+  width: 158px;
+  height: 158px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=about.css.map */

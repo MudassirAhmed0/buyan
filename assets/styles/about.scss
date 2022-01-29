@@ -1,0 +1,97 @@
+.brandCards{
+    .brandCard{
+        height: 300px;
+        .imgCircleBorder{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            width: 147px;
+            height: 147px; 
+            top:-84.5px;
+            border: 1.5px solid var(--unnamed-color-ab9969);
+box-shadow: 0px 0px 20px #6D8DAD29;
+border: 2px solid #AB9969;
+        }
+        .img_container{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            width: 133px;
+            height: 133px; 
+            top:-77.5px;
+            
+        }
+    }
+}
+.valueCards{
+    height: 190px;
+}
+.teamMembers{
+    .img_container{
+        background: var(--unnamed-color-ab9969) 0% 0% no-repeat padding-box;
+        background: #AB9969 0% 0% no-repeat padding-box;
+        opacity: 1;
+        height: 228px;
+        width: 228px;
+        border-radius: 50%;
+        position: relative;
+        top: 5px;
+    }
+    .img_container1{
+        background: var(--unnamed-color-ab9969) 0% 0% no-repeat padding-box;
+        background: #AB9969 0% 0% no-repeat padding-box;
+        opacity: 1;
+        height: 238px;
+        width: 238px;
+        border-radius: 50%;
+        padding: 1px;
+    }
+}
+
+.Where-We-Operate{
+    .card{
+        height: 660px;
+        .textShowOnHover{
+            position: absolute;
+            bottom: 85px;
+            display: none;
+        }
+        &:hover{
+            .textShowOnHover{
+                display: block;
+                animation: fade 1s;
+                
+            }
+            .circleImageCard{
+                top: -145px;
+            }
+        }
+        .circleImageCard{
+            width: 211px;
+            height: 211px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 6px 16px #00000033; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            top: 0;
+            img{
+                width: 158px;
+                height: 158px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
