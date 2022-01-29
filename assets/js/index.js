@@ -35,10 +35,15 @@ servicesDd.addEventListener('mouseleave',()=>{
 let a=1
 
 window.onscroll = function(e) {
-     let height = window.innerHeight
-     if(height * 1.3  > this.oldScroll){
-        letsAnimate()
-     }
+     
+    let height = window.innerHeight
+     if(window.location.pathname.includes('home')||window.location.pathname.includes('about')){
+       
+
+        if(height * 1.3  > this.oldScroll){
+            letsAnimate()
+        } 
+    }
     if(this.oldScroll > height){
           header.classList.add('active')
             header.classList.add('fixed')
@@ -57,36 +62,5 @@ window.onscroll = function(e) {
     }
     this.oldScroll = this.scrollY;
   }
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10, 
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-})
 
 
-const letsAnimate=()=>{
-    if(a===1){
-    $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });}
-    a = 2
- }
