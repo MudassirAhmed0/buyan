@@ -14,3 +14,4 @@ linkBtn.addEventListener('mouseenter',(()=>{
 linkBtn.addEventListener('mouseleave',(()=>{
     linkBtn.querySelector('img').src='./assets/images/icons/external-link.svg'
 }))
+

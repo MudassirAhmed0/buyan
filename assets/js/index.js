@@ -7,29 +7,43 @@ const servicesDd =document.querySelector('.header-dropdown-btn-services')
 
 academiesDd.addEventListener('mouseenter',()=>  {
     header.querySelector('.bunyanLogo').src ='./assets/images/bunyanLogoBlue.svg'
-    header.classList.add('active')
-    header.querySelector('.SearchIcon').src ='./assets/images/home/icons/blueSearch.svg'
-    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
-    academiesDd.querySelector('.Arrow').src='/assets/images/home/icons/primaryArrow.svg'
+    if(!header.classList.contains('fixed')){
+        header.querySelector('.SearchIcon').src ='./assets/images/home/icons/blueSearch.svg'
+        header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
+        header.classList.add('active')
+
+    }
+    academiesDd.querySelector('.Arrow').src='./assets/images/home/icons/primaryArrow.svg'
 })
 academiesDd.addEventListener('mouseleave',()=>  {
-    header.classList.contains('fixed') || header.classList.remove('active')
+   if (!header.classList.contains('fixed'))  {header.classList.remove('active')
     header.querySelector('.SearchIcon').src ='./assets/images/home/icons/search.svg'
-    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/arrow.svg')
     header.querySelector('.bunyanLogo').src ='./assets/images/bunyanLogo.svg'
+    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/arrow.svg')
+}else{
+        header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
+
+    }
 })
 servicesDd.addEventListener('mouseenter',()=> {
     header.querySelector('.bunyanLogo').src ='./assets/images/bunyanLogoBlue.svg'
-    header.classList.add('active')
-    header.querySelector('.SearchIcon').src ='./assets/images/home/icons/blueSearch.svg'
-    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
-    servicesDd.querySelector('.Arrow').src='/assets/images/home/icons/primaryArrow.svg'
+    if(!header.classList.contains('fixed')){
+        header.querySelector('.SearchIcon').src ='./assets/images/home/icons/blueSearch.svg'
+        header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
+        header.classList.add('active')
+
+    }
+    servicesDd.querySelector('.Arrow').src='./assets/images/home/icons/primaryArrow.svg'
 })
 servicesDd.addEventListener('mouseleave',()=>{
-    header.classList.contains('fixed') || header.classList.remove('active')
+    if (!header.classList.contains('fixed'))  {header.classList.remove('active')
     header.querySelector('.SearchIcon').src ='./assets/images/home/icons/search.svg'
-    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/arrow.svg')
     header.querySelector('.bunyanLogo').src ='./assets/images/bunyanLogo.svg'
+    header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/arrow.svg')
+}else{
+        header.querySelectorAll('.Arrow').forEach(item=> item.src = './assets/images/home/icons/blueArrow.svg')
+
+    }
 })
 
 let a=1
@@ -44,7 +58,7 @@ window.onscroll = function(e) {
             letsAnimate()
         } 
     }
-    if(this.oldScroll > height){
+    if(this.oldScroll > 674){
           header.classList.add('active')
             header.classList.add('fixed')
             header.querySelector('.SearchIcon').src ='./assets/images/home/icons/blueSearch.svg'
@@ -63,4 +77,10 @@ window.onscroll = function(e) {
     this.oldScroll = this.scrollY;
   }
 
-
+  const locationHover =(selected) =>{
+    selected.children[0].src = selected.children[0].src.includes('border')?'./assets/images/icons/location-on-white.svg':'./assets/images/icons/location-on-border.svg'
+}
+const openAccordion =(selected)=>{
+    selected.parentNode.parentNode.classList.toggle('active')
+    selected.children[0].src=   selected.children[0].src.includes('primaryArrow.svg')? './assets/images/home/icons/blueArrow.svg':'./assets/images/home/icons/primaryArrow.svg'
+}
